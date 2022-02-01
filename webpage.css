@@ -1,0 +1,870 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.208), rgba(0, 0, 0, 0.2)),
+    url(Garden1.jpg);
+  background-size: cover;
+  font-family: "Aileron semibold", sans-serif;
+}
+.h1text {
+  color: rgb(173, 173, 173);
+  font-size: 3rem;
+}
+.header {
+  text-align: center;
+  height: 20vh;
+  width: 100vw;
+  background: white;
+  margin-bottom: 2.5%;
+}
+.poster {
+  height: 20%;
+  width: 100%;
+  margin-bottom: 2%;
+}
+.bottleinfo {
+  align-items: center;
+  text-align: center;
+  backdrop-filter: blur(11px);
+  background-color: rgba(235, 235, 253, 0.575);
+  border-radius: 12px;
+  animation: fadeIn 0.6s forwards;
+  opacity: 0;
+  margin-bottom: 3%;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    margin-top: 75px;
+  }
+
+  to {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+@keyframes imageIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes btnIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes jumpIn {
+  from {
+    opacity: 0;
+    transform: translate(20px, 20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.table1 {
+  margin: auto;
+  font-size: 1.15rem;
+}
+.image {
+  height: 325px;
+  width: 550px;
+  margin-bottom: 10px;
+  animation: imageIn 1s forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+  margin: 7% 0 5% 0;
+}
+.tableinfo {
+  padding: 00px 20px 0px 20px;
+  color: rgb(0, 0, 0);
+  opacity: 0;
+}
+.tableinfo1 {
+  align-items: center;
+  text-align: center;
+  padding: 10px 40px 10px 40px;
+  color: rgb(0, 0, 0);
+  animation: jumpIn 0.4s forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
+}
+.tableinfo2 {
+  align-items: center;
+  text-align: center;
+  padding: 10px 40px 10px 40px;
+  color: rgb(0, 0, 0);
+  animation: jumpIn 0.4s forwards;
+  animation-delay: 1.05s;
+  opacity: 0;
+}
+.tableinfo3 {
+  align-items: center;
+  text-align: center;
+  padding: 10px 40px 10px 40px;
+  color: rgb(0, 0, 0);
+  animation: jumpIn 0.4s forwards;
+  animation-delay: 1.3s;
+  opacity: 0;
+}
+.tableinfo4 {
+  align-items: center;
+  text-align: center;
+  padding: 10px 40px 10px 40px;
+  color: rgb(0, 0, 0);
+  animation: jumpIn 0.4s forwards;
+  animation-delay: 1.55s;
+  opacity: 0;
+}
+
+.tableinfo5 {
+  align-items: center;
+  text-align: center;
+  padding: 10px 40px 10px 40px;
+  color: rgb(0, 0, 0);
+  animation: jumpIn 0.4s forwards;
+  animation-delay: 1.8s;
+  opacity: 0;
+}
+.tableinfo6 {
+  align-items: center;
+  text-align: center;
+  padding: 10px 40px 10px 40px;
+  color: rgb(0, 0, 0);
+  animation: jumpIn 0.4s forwards;
+  animation-delay: 2.05s;
+  opacity: 0;
+}
+.tableinfo7 {
+  align-items: center;
+  text-align: center;
+  padding: 10px 40px 10px 40px;
+  color: rgb(0, 0, 0);
+  animation: jumpIn 0.4s forwards;
+  animation-delay: 2.3s;
+  opacity: 0;
+  margin: 0 10px 0 10px;
+}
+.tableinfo8 {
+  max-width: 350px;
+  align-items: center;
+  text-align: center;
+  padding: 10px 40px 10px 40px;
+  color: rgb(0, 0, 0);
+  animation: jumpIn 0.4s forwards;
+  animation-delay: 2.55s;
+  opacity: 0;
+}
+.btn {
+  align-items: center;
+  padding: 8px 25px 8px 25px;
+  border-radius: 5px;
+  background-color: aliceblue;
+  border: none;
+  color: #00df60;
+  opacity: 0;
+  font-size: 1.15rem;
+  text-decoration: none;
+  animation: imageIn 1s forwards;
+  animation-delay: 2.2s;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.btn:hover {
+  filter: drop-shadow(0px 8px 5px #018f3e);
+  transition: 0.5s;
+  background-color: #00df60;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+@media all and (max-width: 850px) {
+  .bottleinfo {
+    align-items: center;
+    text-align: center;
+    margin-top: 1px;
+    backdrop-filter: blur(11px);
+    background-color: rgba(235, 235, 253, 0.575);
+    border-radius: 12px;
+    animation: fadeIn 0.6s forwards;
+    opacity: 0;
+  }
+  .poster {
+    height: 20%;
+    width: 100%;
+    margin-bottom: 2%;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      margin-top: 75px;
+    }
+
+    to {
+      opacity: 1;
+      margin-top: 0px;
+    }
+  }
+  @keyframes imageIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes btnIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes jumpIn {
+    from {
+      opacity: 0;
+      padding-bottom: 0px;
+      padding-top: 20px;
+    }
+
+    to {
+      opacity: 1;
+      padding-bottom: 20px;
+      padding-top: 0px;
+    }
+  }
+
+  .table1 {
+    margin: auto;
+    font-size: 1.15rem;
+    width: 50%;
+  }
+  .image {
+    height: 275px;
+    width: 400px;
+    margin-bottom: 10px;
+    animation: imageIn 1s forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+  }
+  .tableinfo {
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    opacity: 0;
+  }
+  .tableinfo1 {
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
+  }
+  .tableinfo2 {
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 1.05s;
+    opacity: 0;
+  }
+  .tableinfo3 {
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 1.3s;
+    opacity: 0;
+  }
+  .tableinfo4 {
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 1.55s;
+    opacity: 0;
+  }
+
+  .tableinfo5 {
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 1.8s;
+    opacity: 0;
+  }
+  .tableinfo6 {
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 2.05s;
+    opacity: 0;
+  }
+  .tableinfo7 {
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 2.3s;
+    opacity: 0;
+    margin: 0 10px 0 10px;
+  }
+  .tableinfo8 {
+    max-width: 250px;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 2.55s;
+    opacity: 0;
+  }
+  .btn {
+    align-items: center;
+    padding: 8px 25px 8px 25px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    border: none;
+    opacity: 0;
+    font-size: 1.15rem;
+    text-decoration: none;
+    animation: imageIn 1s forwards;
+    animation-delay: 2.2s;
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+  .btn:hover {
+    filter: drop-shadow(0px 8px 5px rgba(0, 0, 0, 0.5));
+    transition: 0.5s;
+    background-color: black;
+    color: aliceblue;
+  }
+}
+@media all and (max-width: 700px) {
+  .bottleinfo {
+    align-items: center;
+    text-align: center;
+    margin-top: 1px;
+    backdrop-filter: blur(11px);
+    background-color: rgba(235, 235, 253, 0.575);
+    border-radius: 12px;
+    animation: fadeIn 0.6s forwards;
+    opacity: 0;
+  }
+  .poster {
+    height: 20%;
+    width: 100%;
+    margin-bottom: 2%;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      margin-top: 75px;
+    }
+
+    to {
+      opacity: 1;
+      margin-top: 0px;
+    }
+  }
+  @keyframes imageIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes btnIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes jumpIn {
+    from {
+      opacity: 0;
+      padding-bottom: 0px;
+      padding-top: 20px;
+    }
+
+    to {
+      opacity: 1;
+      padding-bottom: 20px;
+      padding-top: 0px;
+    }
+  }
+
+  .table1 {
+    margin: 0 auto;
+    font-size: 1.15rem;
+  }
+  .image {
+    height: 225px;
+    width: 375px;
+    margin-bottom: 10px;
+    animation: imageIn 1s forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+    margin: 7% 0 5% 0;
+  }
+  .tableinfo {
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    opacity: 0;
+  }
+  .tableinfo1 {
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
+  }
+  .tableinfo2 {
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 1.05s;
+    opacity: 0;
+  }
+  .tableinfo3 {
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 1.3s;
+    opacity: 0;
+  }
+  .tableinfo4 {
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 1.55s;
+    opacity: 0;
+  }
+
+  .tableinfo5 {
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 1.8s;
+    opacity: 0;
+  }
+  .tableinfo6 {
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 2.05s;
+    opacity: 0;
+  }
+  .tableinfo7 {
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 2.3s;
+    opacity: 0;
+  }
+  .tableinfo8 {
+    max-width: 175px;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 2.55s;
+    opacity: 0;
+  }
+  .btn {
+    align-items: center;
+    padding: 8px 25px 8px 25px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    border: none;
+    font-size: 1.15rem;
+    opacity: 0;
+    text-decoration: none;
+    animation: imageIn 1s forwards;
+    animation-delay: 2.2s;
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+  .btn:hover {
+    filter: drop-shadow(0px 8px 5px rgba(0, 0, 0, 0.5));
+    transition: 0.5s;
+    background-color: black;
+    color: aliceblue;
+  }
+}
+@media all and (max-width: 650px) {
+  .bottleinfo {
+    align-items: center;
+    text-align: center;
+    margin-top: 1px;
+    backdrop-filter: blur(11px);
+    background-color: rgba(235, 235, 253, 0.575);
+    border-radius: 12px;
+    animation: fadeIn 0.6s forwards;
+    opacity: 0;
+  }
+  .poster {
+    height: 20%;
+    width: 100%;
+    margin-bottom: 2%;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      margin-top: 75px;
+    }
+
+    to {
+      opacity: 1;
+      margin-top: 0px;
+    }
+  }
+  @keyframes imageIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes btnIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes jumpIn {
+    from {
+      opacity: 0;
+      padding-bottom: 0px;
+      padding-top: 20px;
+    }
+
+    to {
+      opacity: 1;
+      padding-bottom: 20px;
+      padding-top: 0px;
+    }
+  }
+
+  .table1 {
+    margin: auto;
+    font-size: 1.15rem;
+  }
+  .image {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+    animation: imageIn 1s forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+  }
+  .tableinfo {
+    padding: 15px;
+    color: rgb(0, 0, 0);
+
+    /* animation: textIn 1s;
+        animation-delay: 0s; */
+    opacity: 0;
+    /* animation: textIn 0.7s forwards;
+        animation-delay: 1s; */
+  }
+  .tableinfo1 {
+    padding: 15px;
+    color: rgb(0, 0, 0);
+
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
+  }
+  .tableinfo2 {
+    padding: 15px;
+
+    color: rgb(0, 0, 0);
+
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 1.05s;
+    opacity: 0;
+  }
+  .tableinfo3 {
+    padding: 15px;
+    color: rgb(0, 0, 0);
+
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 1.3s;
+    opacity: 0;
+  }
+  .tableinfo4 {
+    padding: 15px;
+    color: rgb(0, 0, 0);
+
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 1.55s;
+    opacity: 0;
+  }
+
+  .tableinfo5 {
+    padding: 15px;
+    color: rgb(0, 0, 0);
+
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 1.8s;
+    opacity: 0;
+  }
+  .tableinfo6 {
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 2.05s;
+    opacity: 0;
+  }
+  .tableinfo7 {
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 2.3s;
+    opacity: 0;
+    margin: 0 10px 0 10px;
+  }
+  .tableinfo8 {
+    max-width: 250px;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 2.55s;
+    opacity: 0;
+  }
+  .btn {
+    align-items: center;
+    padding: 8px 25px 8px 25px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    border: none;
+    opacity: 0;
+    font-size: 1.15rem;
+    text-decoration: none;
+    animation: imageIn 1s forwards;
+    animation-delay: 2.2s;
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+  .btn:hover {
+    filter: drop-shadow(0px 8px 5px rgba(0, 0, 0, 0.5));
+    transition: 0.5s;
+    background-color: black;
+    color: aliceblue;
+  }
+}
+@media all and (max-width: 450px) {
+  .bottleinfo {
+    align-items: center;
+    text-align: center;
+    margin-top: 1px;
+    backdrop-filter: blur(11px);
+    background-color: rgba(235, 235, 253, 0.575);
+    border-radius: 12px;
+    animation: fadeIn 0.6s forwards;
+    opacity: 0;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      margin-top: 75px;
+    }
+
+    to {
+      opacity: 1;
+      margin-top: 0px;
+    }
+  }
+  @keyframes imageIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes btnIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes jumpIn {
+    from {
+      opacity: 0;
+      padding-bottom: 0px;
+      padding-top: 20px;
+    }
+
+    to {
+      opacity: 1;
+      padding-bottom: 20px;
+      padding-top: 0px;
+    }
+  }
+  .poster {
+    height: 20%;
+    width: 100%;
+    margin-bottom: 2%;
+  }
+  .table1 {
+    margin: auto;
+    font-size: 1.15rem;
+  }
+  .image {
+    height: 125px;
+    width: 225px;
+    margin-bottom: 10px;
+    animation: imageIn 1s forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+  }
+  .tableinfo {
+    padding: 5px;
+    color: rgb(0, 0, 0);
+
+    /* animation: textIn 1s;
+        animation-delay: 0s; */
+    opacity: 0;
+    /* animation: textIn 0.7s forwards;
+        animation-delay: 1s; */
+  }
+  .tableinfo1 {
+    padding: 5px;
+    color: rgb(0, 0, 0);
+
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
+  }
+  .tableinfo2 {
+    padding: 5px;
+
+    color: rgb(0, 0, 0);
+
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 1.05s;
+    opacity: 0;
+  }
+  .tableinfo3 {
+    padding: 5px;
+    color: rgb(0, 0, 0);
+
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 1.3s;
+    opacity: 0;
+  }
+  .tableinfo4 {
+    padding: 5px;
+    color: rgb(0, 0, 0);
+
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 1.55s;
+    opacity: 0;
+  }
+
+  .tableinfo5 {
+    padding: 5px;
+    color: rgb(0, 0, 0);
+
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 1.8s;
+    opacity: 0;
+  }
+  .tableinfo6 {
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 2.05s;
+    opacity: 0;
+  }
+  .tableinfo7 {
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 2.3s;
+    opacity: 0;
+    margin: 0 10px 0 10px;
+  }
+  .tableinfo8 {
+    max-width: 250px;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    animation: jumpIn 0.4s forwards;
+    animation-delay: 2.55s;
+    opacity: 0;
+  }
+  .btn {
+    align-items: center;
+    padding: 8px 25px 8px 25px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    border: none;
+    opacity: 0;
+    font-size: 1.15rem;
+    text-decoration: none;
+    animation: imageIn 1s forwards;
+    animation-delay: 2.2s;
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+  .btn:hover {
+    filter: drop-shadow(0px 8px 5px rgba(0, 0, 0, 0.5));
+    transition: 0.5s;
+    background-color: black;
+    color: aliceblue;
+  }
+}
